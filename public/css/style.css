@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    font: 1.1em/5.5 Helvetica, sans-serif;
+}
+
+body{
+    height: 100%;
+    width:500px;
+    overflow-x: hidden;
+}
+
+header{
+    width:100vw;
+    height:80vh;
+}
+
+html{
+    font: 1.2em/1.6em 'Roboto Condensed', sans-serif;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+nav > *{
+    width:50px;
+}
+
+/* Hamburger menu */
+nav > svg{
+    justify-self: right;
+    cursor: pointer;
+}
+
+h1{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1em;
+}

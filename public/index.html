@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Responsive design</title>
 
     <script src="./script/reader.js" type="text/javascript" defer></script>
 
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/svg-style.css" type="text/css">
+
 </head>
 <body>
     <header id="header">
-        <h1>This is my h1</h1>
-    </header>
-    
-    <article>test</article>
+        <nav>
+            <object type="image/svg+xml" data="./media/svg/burger.svg">Burger icon SVG</object>
 
-    <input type="file" id="input-file"/>
+            <svg id="burger-menu" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path id="burger-icon"d="M657.840576 732.301452c-46.817282 1.342578-148.035568-48.007387-148.035568-48.007387l-90.058109 96.012727-149.98292-96.012727L149.720953 684.294065c0 52.988842 44.989657 144.017044 135.025253 144.017044l450.018344 0c135.025253 0 135.025253-144.017044 135.025253-144.017044l-90.007967 0C779.782859 684.294065 747.874125 729.670531 657.840576 732.301452zM821.774229 492.273726 197.73755 492.273726c-39.758516 0-72.02643 32.218796-72.02643 71.978335 0 39.783075 32.267914 72.03871 72.02643 72.03871l624.036679 0c39.805588 0 72.02643-32.255635 72.02643-72.03871C893.800659 524.491499 861.579817 492.273726 821.774229 492.273726zM509.806032 192.210673c-198.890816 0-360.084055 112.889093-360.084055 252.020874l720.068849 0C869.790826 305.10079 708.547445 192.210673 509.806032 192.210673zM341.742315 348.232123c-13.251815 0-24.007787-10.732435-24.007787-24.009833 0-13.239536 10.755971-23.995507 24.007787-23.995507 13.252839 0 24.00881 10.755971 24.00881 23.995507C365.751125 337.500711 354.995153 348.232123 341.742315 348.232123zM509.806032 300.226782c-13.304004 0-24.059975-10.733459-24.059975-23.972994 0-13.278421 10.755971-24.034393 24.059975-24.034393 13.226233 0 23.959691 10.755971 23.959691 24.034393C533.7647 289.493324 523.031241 300.226782 509.806032 300.226782zM677.769464 348.232123c-13.254885 0-24.009833-10.732435-24.009833-24.009833 0-13.239536 10.755971-23.995507 24.009833-23.995507 13.251815 0 23.960715 10.755971 23.960715 23.995507C701.730179 337.500711 691.02128 348.232123 677.769464 348.232123z" />
+            </svg>
+        </nav>
+        <h1><div id="h1-hi">Hi.</div> <div id="h1-name">My name is Fabian.</div> <div id="h1-offer">I do front-end development and web design.</div></h1>
+        <svg version="1.1" id="header-bkr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 1600" style="enable-background:new 0 0 2560 1600;" xml:space="preserve">
+            <style type="text/css">
+	            .st0{fill:url(#SVGID_1_);}
+            </style>
+            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="603.2534" x2="2560" y2="603.2534">
+	            <stop  offset="0" style="stop-color:#2193B0"/>
+	            <stop  offset="1" style="stop-color:#6DD5ED"/>
+            </linearGradient>
+            <path class="st0" d="M11.58,963.07c60.94,60.77,136.85,104.88,215.27,139.16c82.97,36.27,171.25,61.07,260.01,78.38
+	            c81.76,15.94,165.03,25.15,248.36,25.86c111.4,0.95,221.28-16.62,327.87-48.54c104.68-31.35,204.98-75.04,304.41-119.97
+	            c51.68-23.35,102.89-48.4,155.61-69.33c55.49-22.03,113.19-37.88,172.37-45.95c58.45-7.97,115.75-7.4,174.12,0.36
+	            c50.84,6.76,104.27,12.66,154.76,0.52c47.71-11.47,85.82-38.15,112.46-79.17c24.6-37.88,41.33-80.15,61.73-120.29
+	            c22.17-43.64,49.39-81.2,86.8-112.99c39.7-33.75,83.57-62.14,129.1-87.33c47.44-26.25,96.6-49.47,145.54-72.77V0H0v951
+	            C3.8,955.03,7.67,959.17,11.58,963.07z"/>
+        </svg>
+
+    </header>
 
 
     <!-- Header animation - vantajs.com-->
     <script src="./script/vanta/three.r92.min.js"></script> 
     <script src="./script/vanta/vanta.net.min.js"></script>
-    <!--
-    <script defer> VANTA.NET(
+
+    <!--<script defer> VANTA.NET(
         { el: "#header", color: 0xfc397c, 
         backgroundColor: 0x25163e, points: 9.00, 
         maxDistance: 21.00, 
