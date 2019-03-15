@@ -1,3 +1,9 @@
+:root{
+    --main-blue-color: #2193B0;
+    --main-pink-color: #9b59b6;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,43 +12,73 @@
 }
 
 html{
-    font: 1.1em/5.5 Helvetica, sans-serif;
-}
-
-body{
-    height: 100%;
-    width:500px;
-    overflow-x: hidden;
-}
-
-header{
-    width:100vw;
-    height:80vh;
-}
-
-html{
     font: 1.2em/1.6em 'Roboto Condensed', sans-serif;
 }
 
+
+body{
+    height: 100%;
+    overflow-x: hidden;
+    padding:2rem;
+}
+
+/* navigation */
 nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
 }
 
-nav > *{
-    width:50px;
-}
+
 
 /* Hamburger menu */
-nav > svg{
+#hamburger-menu{
     justify-self: right;
     cursor: pointer;
+    fill: #fff;
 }
 
-h1{
+#fj-logo{
     color: #fff;
     font-size: 2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 0.25);
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+}
+
+
+
+h1{
+    margin-top:1rem;
+    color: #fff;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 3rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 0.25);
+}
+
+.pink-underline{
+    display:inline-block;
+    border-bottom: 5px solid var(--main-pink-color);
+    line-height:1.4rem;
+
+}
+
+button{
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.8);
+    border:none;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.2);
+    background-color: #111;
+    background-image: linear-gradient(-45deg, rgb(110, 65, 231), hsl(283, 39%, 53%, 1));
 }

@@ -5,9 +5,3 @@
     height:800px;
     transform: translateX(-300px);
 }
-
-#burger-icon, #burger-menu{
-    fill: #fff;
-    width:50px;
-    height: 50px;
-}
