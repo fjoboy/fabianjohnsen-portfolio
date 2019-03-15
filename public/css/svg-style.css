@@ -4,4 +4,5 @@
     z-index: -1;
     height:800px;
     transform: translateX(-300px);
+    overflow-x: hidden;
 }
