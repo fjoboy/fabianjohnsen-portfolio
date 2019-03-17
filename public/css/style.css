@@ -16,6 +16,10 @@ html{
     overflow-x: hidden;
 }
 
+.st01, #SVGID_1_{
+    overflow-x: hidden;
+}
+
 
 body{
     height: 100%;
