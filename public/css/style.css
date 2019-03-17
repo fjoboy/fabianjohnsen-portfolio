@@ -3,7 +3,6 @@
     --main-pink-color: #9b59b6;
 }
 
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,13 +12,7 @@
 
 html{
     font: 1.2em/1.6em 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
 }
-
-.st01, #SVGID_1_{
-    overflow-x: hidden;
-}
-
 
 body{
     height: 100%;
@@ -50,6 +43,7 @@ nav{
 }
 
 header{
+    width:100vw;
     display:grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
@@ -85,5 +79,5 @@ button{
     border:none;
     box-shadow: 1px 1px 3px rgba(0,0,0, 0.2);
     background-color: #111;
-    background-image: linear-gradient(-45deg, rgb(110, 65, 231), hsl(283, 39%, 53%, 1));
+    background: linear-gradient(-45deg, rgb(110, 65, 231), hsl(283, 39%, 53%, 1));
 }
