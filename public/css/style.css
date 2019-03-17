@@ -1,6 +1,8 @@
 :root{
     --main-blue-color: #2193B0;
     --main-pink-color: #9b59b6;
+        font: 1.2em/1.6em 'Roboto Condensed', sans-serif;
+    color: #333;
 }
 
 *{
@@ -10,14 +12,11 @@
     text-decoration: none;
 }
 
-html{
-    font: 1.2em/1.6em 'Roboto Condensed', sans-serif;
-}
-
 body{
     height: 100%;
     overflow-x: hidden;
     padding:2rem;
+    background-color: rgba(255, 255, 255, 0.90);
 }
 
 /* navigation */
@@ -46,15 +45,19 @@ header{
     grid-row-gap: 3rem;
 }
 
+h1, h2, h3, h4, h5, h6{
+    text-shadow: 1px 1px 5px rgba(0,0,0, 0.25);
+    font-weight: 400;
+    color: #333;
+}
+
 
 
 h1{
     margin-top:1rem;
     color: #fff;
     font-size: 1.8rem;
-    font-weight: 400;
     line-height: 3rem;
-    text-shadow: 1px 1px 5px rgba(0,0,0, 0.25);
 }
 
 .pink-underline{
@@ -77,4 +80,29 @@ button{
     box-shadow: 1px 1px 3px rgba(0,0,0, 0.2);
     background-color: #111;
     background: linear-gradient(-45deg, rgb(110, 65, 231), hsl(283, 39%, 53%, 1));
+}
+
+/* main section */
+
+main{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+/* skills-section */
+
+#skills{
+    margin-top: 12rem;
+    padding:1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    box-shadow: 0 15px 50px 0 rgba(51, 94, 164, .1);
+}
+
+#fjohnsen-portrait{
+    transform: translateY(-1rem);
+    border-radius: 0.2em;
+    width:100%;
+
 }
