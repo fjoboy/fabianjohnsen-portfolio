@@ -26,8 +26,6 @@ nav{
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 /* Hamburger menu */
 #hamburger-menu{
     justify-self: right;
@@ -43,11 +41,9 @@ nav{
 }
 
 header{
-    overflow-x: hidden;
-    width:100vw;
     display:grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 2rem;
+    grid-row-gap: 3rem;
 }
 
 
